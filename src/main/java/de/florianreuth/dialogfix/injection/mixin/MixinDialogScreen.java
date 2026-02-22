@@ -46,7 +46,8 @@ public abstract class MixinDialogScreen extends Screen {
 
             for (final GuiEventListener guiEventListener : containerWidget.children()) {
                 if (guiEventListener instanceof EditBox || guiEventListener instanceof MultiLineEditBox) {
-                    setFocused(guiEventListener);
+                    containerWidget.setFocused(guiEventListener);
+                    setFocused(containerWidget);
                     break;
                 }
             }
