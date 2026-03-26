@@ -1,12 +1,12 @@
 import de.florianreuth.baseproject.*
 
 plugins {
-    id("net.fabricmc.fabric-loom-remap")
+    id("net.fabricmc.fabric-loom")
     id("de.florianreuth.baseproject")
 }
 
 setupProject()
-setupFabricRemap()
+setupFabric()
 setupPublishing()
 
 repositories {
@@ -14,5 +14,5 @@ repositories {
 }
 
 dependencies {
-    modCompileOnly("com.terraformersmc:modmenu:15.0.0")
+    compileOnly("com.terraformersmc:modmenu:18.0.0-alpha.8")
 }
