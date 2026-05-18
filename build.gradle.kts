@@ -14,5 +14,5 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.terraformersmc:modmenu:18.0.0-alpha.8")
+    compileOnly("com.terraformersmc:modmenu:19.0.0-alpha.1")
 }
