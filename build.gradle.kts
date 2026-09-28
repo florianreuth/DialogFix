@@ -1,12 +1,7 @@
-import de.florianreuth.baseproject.integration.setupFabric
-import de.florianreuth.baseproject.setupProject
-import de.florianreuth.baseproject.setupPublishing
-
 plugins {
-    id("net.fabricmc.fabric-loom")
-    id("de.florianreuth.baseproject")
+    id("base.java")
+    id("base.fabric")
+    id("base.maven_publish")
+    id("publishing.reposilite")
+    id("publishing.maven_central")
 }
-
-setupProject()
-setupFabric()
-setupPublishing()
